@@ -13,6 +13,7 @@ public class EchoClient {
 
         if (args.length == 0) {
             args = new String[]{"localhost", "hello"};
+            int n = 5;
         }
 
         if (args.length < 2) {

@@ -10,10 +10,10 @@ import java.net.Socket;
 public class EchoClient {
 
     public static void main(String[] args) throws IOException {
-
+        int m = 5;
         if (args.length == 0) {
             args = new String[]{"localhost", "hello"};
-            int n = 9;
+
         }
 
         if (args.length < 2) {

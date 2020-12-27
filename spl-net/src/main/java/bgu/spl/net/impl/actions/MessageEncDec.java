@@ -8,7 +8,7 @@ public class MessageEncDec implements MessageEncoderDecoder<Command> {
     private byte[] message = new byte[1 << 10];
     private int len = 0;
     private byte[] opcodeBytes = new byte[2];
-    private short opcode = -1;
+    private short opcode = 2; // change to -1
 
     //constructor
 

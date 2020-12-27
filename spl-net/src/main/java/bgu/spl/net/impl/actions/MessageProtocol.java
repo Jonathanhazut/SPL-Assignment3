@@ -1,4 +1,15 @@
 package bgu.spl.net.impl.actions;
 
-public class MessageProtocol {
+import bgu.spl.net.api.MessagingProtocol;
+
+public class MessageProtocol implements MessagingProtocol<Command> {
+    @Override
+    public Command process(Command msg) {
+        return null;
+    }
+
+    @Override
+    public boolean shouldTerminate() {
+        return false;
+    }
 }

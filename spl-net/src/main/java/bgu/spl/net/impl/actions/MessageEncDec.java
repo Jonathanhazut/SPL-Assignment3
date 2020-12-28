@@ -8,7 +8,14 @@ public class MessageEncDec implements MessageEncoderDecoder<Command> {
     private byte[] message = new byte[1 << 10];
     private int len = 0;
     private byte[] opcodeBytes = new byte[2];
-    private short opcode = 2; // change to -1
+    private short opcode = -1;
+    private Command[] commands = {new AdminRegCommand("password","username"),
+            new StudentRegCommand("password","username"),
+            new LoginCommand("password","username"),
+            new LogoutCommand(), 
+};
+
+
 
     //constructor
 
@@ -23,11 +30,7 @@ public class MessageEncDec implements MessageEncoderDecoder<Command> {
             }
             return null;
         }
-        //TODO - put in different assistant function to make our code more elegant
-//        if (opcode == 5){
-//
-//        }
-        return null;
+         return commands[opcode-1];
     }
 
     @Override

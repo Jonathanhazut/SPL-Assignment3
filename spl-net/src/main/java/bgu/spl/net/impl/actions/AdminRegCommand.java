@@ -7,10 +7,10 @@ public class AdminRegCommand extends Command {
     private String userName;
 
     //constructor
-    public AdminRegCommand(String password, String userName) {
+    public AdminRegCommand(String userName, String password) {
         super((short) 1);
-        this.password = password;
         this.userName = userName;
+        this.password = password;
     }
 
 

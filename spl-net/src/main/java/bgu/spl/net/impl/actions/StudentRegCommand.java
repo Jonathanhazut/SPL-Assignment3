@@ -6,10 +6,10 @@ public class StudentRegCommand extends Command {
     private String userName;
 
     //constructor
-    public StudentRegCommand(String password, String userName) {
+    public StudentRegCommand(String userName, String password) {
         super((short) 2);
-        this.password = password;
         this.userName = userName;
+        this.password = password;
     }
 
 }

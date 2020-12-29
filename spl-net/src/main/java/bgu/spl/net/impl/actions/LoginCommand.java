@@ -6,10 +6,10 @@ public class LoginCommand extends Command {
     private String userName;
 
     //constructor
-    public LoginCommand(String password, String userName) {
+    public LoginCommand(String userName, String password) {
         super((short) 3);
-        this.password = password;
         this.userName = userName;
+        this.password = password;
     }
 
 }

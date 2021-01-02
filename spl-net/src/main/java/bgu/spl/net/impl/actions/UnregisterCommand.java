@@ -8,4 +8,8 @@ public class UnregisterCommand extends Command {
         super((short) 10);
         this.courseNumber = courseNumber;
     }
+
+    public short getCourseNumber() {
+        return courseNumber;
+    }
 }

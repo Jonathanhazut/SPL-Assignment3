@@ -11,6 +11,9 @@ public class StudentStatCommand extends Command{
             this.studentUserName = studentUserName;
         }
 
+    public String getStudentUserName() {
+        return studentUserName;
     }
+}
 
 

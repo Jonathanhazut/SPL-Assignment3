@@ -9,4 +9,8 @@ public class IsRegisteredCommand extends Command{
         super((short) 9);
         this.courseNumber = courseNumber;
     }
+
+    public short getCourseNumber() {
+        return courseNumber;
+    }
 }

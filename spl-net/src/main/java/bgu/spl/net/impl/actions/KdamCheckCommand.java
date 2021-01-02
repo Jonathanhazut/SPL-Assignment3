@@ -10,4 +10,7 @@ public class KdamCheckCommand extends Command{
         this.courseNumber = courseNumber;
     }
 
+    public short getCourseNumber() {
+        return courseNumber;
+    }
 }

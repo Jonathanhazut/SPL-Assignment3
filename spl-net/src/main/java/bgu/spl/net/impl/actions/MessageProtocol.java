@@ -53,6 +53,14 @@ public class MessageProtocol implements MessagingProtocol<Command> {
         if (msg instanceof IsRegisteredCommand){
             return processIsRegisteredCommand((IsRegisteredCommand) msg);
         }
+
+        if (msg instanceof  UnregisterCommand){
+            return processUnRegisterCommand((UnregisterCommand) msg);
+        }
+
+        if (msg instanceof MyCoursesCommand){
+            return processMyCoursesCommand((MyCoursesCommand) msg);
+        }
         return null;
     }
 
@@ -294,21 +302,6 @@ public class MessageProtocol implements MessagingProtocol<Command> {
 
         return new ACKCommand((short) 11, coursesNums.toString());
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     @Override
